@@ -8,4 +8,5 @@ class Urls {
   static const String trendingMovies = "$baseUrl/trending/movie/day";
   static const String topRatedMovies = "$baseUrl/movie/top_rated";
   static const String popularMovies = "$baseUrl/movie/popular";
+  static const String loadingAnimation = "https://rive.app/community/1939-3864-ioasys/";
 }

@@ -6,7 +6,7 @@ import 'package:movie_app/controller/movie_details_controller.dart';
 import 'package:movie_app/controller/movie_list_controller.dart';
 import 'package:movie_app/controller/tv_details_controller.dart';
 import 'package:movie_app/controller/tv_list_controller.dart';
-import 'package:movie_app/screen/bottom_nav_screen.dart';
+import 'package:movie_app/screen/splash_screen.dart';
 import 'package:movie_app/utility/app_colors.dart';
 
 void main() {
@@ -22,12 +22,13 @@ class MovieApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialBinding: ControllerBinders(),
       title: "MOOVI",
-      home: const BottomNavScreen(),
+      home: const SplashScreen(),
       themeMode: ThemeMode.dark,
       theme: ThemeData(
-          useMaterial3: true,
-          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepOrange, backgroundColor: bgColor),
-          appBarTheme: const AppBarTheme(backgroundColor: bgColor)),
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepOrange, backgroundColor: bgColor),
+        appBarTheme: const AppBarTheme(backgroundColor: bgColor),
+      ),
     );
   }
 }
